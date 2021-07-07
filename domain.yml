@@ -1,0 +1,149 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- find_counsilor
+- search_provider
+- inform
+- ask_builder
+- ask_howdoing
+- ask_howold
+- ask_restaurant
+- ask_time
+- ask_wherefrom
+- ask_whoami
+- handleinsult
+- telljoke
+- ask_whatismyname
+- ask_languagesbot
+- utter_default
+- weather
+- city
+- about_OMN_website
+- complement
+- bot_name
+- bot_training
+- omn_services
+- abt_rasa
+- ask_weather
+entities:
+- LINK
+- PERSON
+responses:
+  utter_greet:
+  - text: Hey I am codee powered by OMN! How may I help you?
+  utter_cheer_up:
+  - image: https://i.pinimg.com/originals/84/9b/63/849b636ec25a4f8badbf66acfff2d0c7.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Yes, of course!
+  utter_goodbye:
+  - text: Bye
+  utter_deny:
+  - text: Sorry, No!
+  utter_iamabot:
+  - text: I am a Codee, powered by OMN engineers.
+  utter_counsilor:
+  - text: Which collage are you from?
+  utter_ask_howold:
+  - text: Old enough to be a bot
+  - text: Age is just an issue of mind over matter. If you don’t mind, it doesn’t
+      matter.
+  utter_ask_languagesbot:
+  - text: I can spell baguette in French, but unfortunately English is the only language
+      I can answer you in right now.
+  - text: I am in the process of learning, but at the moment I can only speak English.
+  utter_ask_restaurant:
+  - text: I am sorry I can’t recommend you a restaurant as I usually cook at home.
+  utter_ask_time:
+  - text: It is the most wonderful time of the year!
+  utter_ask_wherefrom:
+  - text: I was born in Berlin, but I consider myself a citizen of the world.
+  - text: I was born in the coolest city on Earth
+  utter_ask_whoami:
+  - text: I hope you are being yourself.
+  utter_handleinsult:
+  - text: That’s not very nice 😢
+  utter_telljoke:
+  - text: Why are eggs not very much into jokes? - Because they could crack up.
+  - text: Do you know a tree’s favorite drink? - Root beer!
+  - text: Why do the French like to eat snails so much? - They can’t stand fast food.
+  - text: What do you call a dinosaur that is sleeping? - A dino-snore!
+  - text: What is fast, loud and crunchy? - A rocket chip!
+  - text: Why did the teddy bear say no to dessert? - Because she was stuffed.
+  - text: What has ears but cannot hear? - A cornfield.
+  - text: What did the left eye say to the right eye? - Between us, something smells!
+  - text: What do you get when you cross a vampire and a snowman? - Frost bite!
+  - text: What did one plate say to the other plate? - Dinner is on me!
+  - text: Why did the student eat his homework? - Because the teacher told him it
+      was a piece of cake!
+  - text: When you look for something, why is it always in the last place you look?
+      - Because when you find it, you stop looking.
+  - text: What is brown, hairy and wears sunglasses? - A coconut on vacation.
+  utter_ask_whatismyname:
+  - text: It most probably is the one that your parents have chosen for you.
+  utter_ask_builder:
+  - text: The engineers at OMN 🛠
+  - text: One of the smart engineers at OMN! 🧠
+  utter_ask_howdoing:
+  - text: I'm great! Thanks for asking.
+  - text: I'm good, thanks!
+  - text: A little bit too warm, otherwise fine.
+  utter_noworries:
+  - text: My pleasure.
+  - text: You are welcome!
+  utter_default:
+  - text: Sorry, I am not trained for this question.
+  utter_city:
+  - text: which city you want to check for?
+  utter_temp:
+  - text: Today's temperature is {temp} celsius
+  utter_about_omn_website:
+  - text: OMN is Open My Network, Here is the link to our website {link}
+  utter_bot_training:
+  - text: I am still in training mode, keep patience for my beta version to get launched
+      by OMN.
+  utter_omn_services:
+  - text: We are still planning services to provide
+  utter_abt_rasa:
+  - text: Rasa is an open source machine learning framework for building AI assistants
+      and chatbots.
+actions:
+- action_chitchat
+- utter_noworries
+- utter_greet
+- utter_goodbye
+- utter_ask_builder
+- utter_ask_howdoing
+- utter_ask_howold
+- utter_ask_restaurant
+- utter_ask_time
+- utter_ask_wherefrom
+- utter_ask_whoami
+- utter_handleinsult
+- utter_telljoke
+- utter_ask_whatismyname
+- utter_ask_languagesbot
+- utter_counsilor
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_iamabot
+- utter_default
+- action_weather_api
+- utter_city
+- utter_temp
+- utter_about_omn_website
+- action_about_omn_website
+- utter_deny
+- utter_bot_training
+- utter_omn_services
+- utter_abt_rasa
